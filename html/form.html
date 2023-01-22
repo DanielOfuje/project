@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>a simple form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+      
+       /* body style */
+        body{
+            background-color: rgb(27, 25, 25);
+            color: blanchedalmond;
+            text-align: center;
+
+        }
+        
+        
+        
+        /* h1 stle */
+        h1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* button style */
+       
+        input{
+            background-color:rgba(27, 25, 25, 0.308) ;
+            color: white;
+            transition: 0.8s;
+        }
+        
+        input:hover{
+            background-color:white ;
+            color: black;
+           
+        }
+        textarea{
+           background-color: rgba(27, 25, 25, 0.308);
+           color: white;
+           transition: 0.8s;
+        }
+        textarea:hover{
+            background-color: white;
+            color: black;
+            padding: 0px 0px 30px 0px;
+           
+        }
+        button{
+            border: 2px solid white;
+            transition: 0.8s;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+
+        
+        
+    
+    </style>
+</head>
+<body>
+    <a href="index.html"><button>HOME</button></a><br>
+    <!-- header 1 text -->
+    <h1>Please enter the following information</h1>
+    <form action="#">
+        <!-- link -->
+      <!--name -->
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" placeholder="Enter Your name here"  title="enter your full name"><br/>
+      <!--email -->
+      <labeL for="email">Email:</labeL><br/>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com"><br/>
+      <!-- textarea -->
+      <label for="message">Message</label><br/>
+      <textarea name="message" id="message" placeholder="enter your text here" cols="30" rows="3"></textarea><br/>
+      <!-- number -->
+      <label for="age">Age</label><br/>
+      <input type="number" name="age" id="age" placeholder="Enter your age here"><br/>
+      <label for="birthdate">D.O.B</label><br/>
+      <input type="date" name="birthdate" id="birthdate">
+      <!-- select -->
+      <label for="sex">sex</label><br/>
+      <select name="sex" id="sex"><br/>
+        <option value="male">Male</option>
+        <option value selected="female">Female</option>
+        <option value="other">other</option>
+      </select><br/>
+     <!-- checkbox  -->
+     <label for="membership">select your preferred package:</label><br/>
+     <input type="radio" name="membership" value="standard" id="membership">
+     <label for="standard">standard</label> <br/>
+     <input type="radio" name="membership" value="pro" id="membership " checked>
+     <label for="pro">pro</label><br/>
+     <input type="radio" name="membership" value="pro-premium" id="membership">
+     <label for="pro-premium">pro-premium</label><br/>
+     <!-- radio -->
+     <label for="preference">likes</label><br/>
+     <input type="checkbox" name="preference" value="preference" id="bikes">
+     <label for="Bikes">Bikes</label> <br/>
+     <input type="checkbox" name="preference" value="pr" id="cars ">
+     <label for="Cars">Cars</label><br/>
+     <input type="checkbox" name="preference" value="pro-premium" id="supercars">
+     <label for="Supercars">Supercars</label><br/>
+     <button type="submit">submit</button>
+     <button type="reset">reset</button>
+    </form>
+</body>
+</html>
