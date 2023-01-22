@@ -1,0 +1,29 @@
+table{
+    width: 50%;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+}
+th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+tr:hover{
+    background-color: bisque;
+}
+ul ol li{
+    color: green;
+}
+ul li{
+    color:blue;
+}
+/* button style */
+button{
+    background-color: white;
+    transition: 0.8s;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
